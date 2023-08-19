@@ -147,16 +147,6 @@ b.max-bold {
     margin-bottom: 60px;
 }
 
-/*.section .heading:before {*/
-/*    content: '';*/
-/*    height: 2px;*/
-/*    width: 80px;*/
-/*    border-radius: 0;*/
-/*    margin-bottom: 0;*/
-/*    display: block;*/
-/*    background: var(--lightOrange);*/
-/*}*/
-
 h6.subtitle-text
 {
     width: 150px;
@@ -586,7 +576,6 @@ li.experience-list {
     line-height: 1.5;
     font-weight: inherit;
     word-break: break-word;
-    width: 600px;
 }
 
 li.experience-list:before {
@@ -689,7 +678,6 @@ li.experience-list-achievement {
     line-height: 1.5;
     font-weight: inherit;
     word-break: break-word;
-    width: 600px;
 }
 
 li.experience-list-achievement img {
@@ -765,7 +753,6 @@ li.experience-list-achievement img {
 }
 
 p.education-description {
-    width: 600px;
     font: inherit;
     font-family: 'Titillium Web', sans-serif;
     letter-spacing: 1px;
@@ -777,7 +764,6 @@ p.education-description {
 
 h3.about-me-title
 {
-    width: 600px;
     font: inherit;
     font-family:'Titillium Web', sans-serif;
     font-weight: 400;
@@ -791,7 +777,6 @@ h3.about-me-title
 
 p.about-me-content
 {
-    width: 1000px;
     font-family:'Titillium Web', sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
