@@ -6,6 +6,8 @@
     --headerBackgroundFirstColorGradient: #b73e0f;
     --headerBackgroundSecondColorGradient: #8e300c;
     --blackFont: #000000;
+    --experienceWrapperLinePercentage: 18%;
+    --educationWrapperLinePercentage: 14%;
 }
 
 html {
@@ -512,6 +514,15 @@ i.ion-social-github {
     color: var(--white);
 }
 
+.experience-container a img {
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.experience-container a img:hover {
+    border-bottom: 3px solid var(--lightOrange);
+}
+
 .experience .list > li {
     display: block;
     position: relative;
@@ -544,6 +555,14 @@ i.ion-social-github {
     left: -51px;
     width: 2px;
     background: #ccc;
+}
+
+.experience-wrapper:after {
+    bottom: calc(var(--experienceWrapperLinePercentage) - 70px);
+}
+
+.experience-wrapper .experience:nth-last-child(2):after {
+    content: none;
 }
 
 .experience-wrapper .experience {
@@ -714,11 +733,42 @@ li.experience-list-achievement img {
     width: 25%;
     padding: 0 7.5px 0px;
     margin-top: 15px;
+    position: relative;
 }
 
 .portfolio-section .p-item a {
     display: inline-block;
     position: relative;
+}
+
+.portfolio-section .p-item:hover .p-itemHover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-section .p-item .p-itemHover {
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    bottom: 0;
+    left: 7.5px;
+    right: 7.5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    padding: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .education-wrapper {
@@ -733,6 +783,14 @@ li.experience-list-achievement img {
     left: -51px;
     width: 2px;
     background: #ccc;
+}
+
+.education-wrapper:after {
+    bottom: calc(var(--educationWrapperLinePercentage) - 70px);
+}
+
+.education-wrapper .experience:nth-last-child(2):after {
+    content: none;
 }
 
 .education-wrapper .education {
@@ -849,7 +907,8 @@ body {
 }
 
 .workIMG {
-    width: 30%;
+    width: auto;
+    max-width: 80px;
     border-radius: 5px;
     overflow: hidden;
     height: auto;

@@ -652,3 +652,16 @@ function iconImageSourceHighlightFinder(source)
 
 	 return source.substring(startSubStr, endSubStr);
 }
+
+function adjustFontSizeToFit(element) {
+	let maxHeight = parseFloat(window.getComputedStyle(element).lineHeight) * 3;
+	while (element.scrollHeight > maxHeight) {
+		let currentSize = parseFloat(window.getComputedStyle(element).fontSize);
+		element.style.fontSize = `${currentSize - 1}px`;
+		if (currentSize <= 10) {
+			break;
+		}
+	}
+}
+
+document.querySelectorAll('.portfolio-section .p-item .p-itemHover').forEach(adjustFontSizeToFit);
