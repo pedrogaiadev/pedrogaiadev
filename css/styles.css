@@ -473,9 +473,24 @@ div.top-right-information {
     transform: scale(0);
 }
 
-.intro .social-icons > li > a:hover:after {
-    -webkit-transform: scale(0.80);
-    transform: scale(0.80);
+.intro .social-icons > li > a:hover:after
+{
+    -webkit-transform: scale(0.90);
+    transform: scale(0.90);
+
+    transition: transform 0.3s, color 0.3s;
+}
+
+.intro .social-icons > li > a:hover i
+{
+    color: var(--backgroundFirstColorGradient);
+}
+
+.intro .social-icons > li > a:hover
+{
+    background-color: white;
+    transition: background-color 0.3s;
+    transition-delay: 0.05s;
 }
 
 i.ion-social-linkedin {
