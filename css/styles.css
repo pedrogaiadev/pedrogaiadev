@@ -6,9 +6,10 @@
     --headerBackgroundFirstColorGradient: #b73e0f;
     --headerBackgroundSecondColorGradient: #8e300c;
     --blackFont: #000000;
-    --experienceWrapperLinePercentage: 15%;
+    --experienceWrapperLinePercentage: 13.5%;
     --educationWrapperLinePercentage: 14%;
 }
+/*This place changes experience line lenght*/
 
 html {
     font-size: 100%;
@@ -572,9 +573,8 @@ i.ion-social-github {
     background: #ccc;
 }
 
-/*This place changes experience line lenght*/
 .experience-wrapper:after {
-    bottom: calc(var(--experienceWrapperLinePercentage) - 180px);
+    bottom: calc(var(--experienceWrapperLinePercentage) - 130px);
 }
 
 .experience-wrapper .experience:nth-last-child(2):after {
