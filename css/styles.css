@@ -572,8 +572,9 @@ i.ion-social-github {
     background: #ccc;
 }
 
+/*This place changes experience line lenght*/
 .experience-wrapper:after {
-    bottom: calc(var(--experienceWrapperLinePercentage) - 130px);
+    bottom: calc(var(--experienceWrapperLinePercentage) - 180px);
 }
 
 .experience-wrapper .experience:nth-last-child(2):after {
